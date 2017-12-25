@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import story1 from './img/story-1.jpeg'
+import story2 from './img/story-2.jpeg'
+
 class App extends Component {
     render() {
         return (
@@ -19,6 +22,7 @@ class App extends Component {
                             voluptatibus.
                         </p>
                     </div>
+
                     <div className="feature">
                         <h4 className="heading-4--dark">
                             Only The Best Properties
@@ -28,6 +32,7 @@ class App extends Component {
                             molestias accusamus rerum sed a eligendi aut quia.
                         </p>
                     </div>
+
                     <div className="feature">
                         <h4 className="heading-4--dark">
                             All Homes In Top Locations
@@ -37,6 +42,7 @@ class App extends Component {
                             voluptatibus quidem consequatur harum.
                         </p>
                     </div>
+
                     <div className="feature">
                         <h4 className="heading-4--dark">
                             New Home In One Week
@@ -66,7 +72,18 @@ class App extends Component {
                     </div>
                 </section>
 
-                <div className="story__pictures">Story Pictures</div>
+                <div className="story__pictures">
+                    <img
+                        src={story1}
+                        alt="couple with new house"
+                        className="story__img--1"
+                    />
+                    <img
+                        src={story2}
+                        alt="couple with new house"
+                        className="story__img--2"
+                    />
+                </div>
                 <div className="story__content">
                     <h3 className="heading-3 mb-sm">Happy Customers</h3>
                     <h2 className="heading-2 heading-2-dark mb-md">
@@ -79,6 +96,7 @@ class App extends Component {
                     </p>
                     <button className="btn">Find Your Own Home</button>
                 </div>
+
                 <section className="homes">Homes</section>
                 <section className="gallery">Gallery</section>
                 <footer className="footer">Footer</footer>
