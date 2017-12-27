@@ -23,13 +23,34 @@ import gal11 from './img/gal-11.jpeg'
 import gal12 from './img/gal-12.jpeg'
 import gal13 from './img/gal-13.jpeg'
 import gal14 from './img/gal-14.jpeg'
+import imageLogo from './img/logo.png'
+import imageLogo1 from './img/logo-bbc.png'
+import imageLogo2 from './img/logo-forbes.png'
+import imageLogo3 from './img/logo-techcrunch.png'
+import imageLogo4 from './img/logo-bi.png'
 
 class App extends Component {
     render() {
         return (
             <div className="container">
-                <div className="sidebar">Sidebar</div>
-                <header className="header">Header</header>
+                <div className="sidebar">
+                    <button className="nav-btn" />
+                </div>
+                <header className="header">
+                    <img src={imageLogo} alt="" className="header__logo" />
+                    <h3 className="heading-3">Your Own Home</h3>
+                    <h1 className="heading-1">The Ultimate Personal Freedom</h1>
+                    <button className="btn header__btn">
+                        View Our Properties
+                    </button>
+                    <div className="header__seenon-text">Seen On</div>
+                    <div className="header__seenon-logos">
+                        <img src={imageLogo1} alt="" />
+                        <img src={imageLogo2} alt="" />
+                        <img src={imageLogo3} alt="" />
+                        <img src={imageLogo4} alt="" />
+                    </div>
+                </header>
                 <div className="realtors">Top 3 Realtors</div>
 
                 <section className="features">
@@ -267,7 +288,43 @@ class App extends Component {
                         <img src={gal14} alt="" className="gallery__img" />
                     </figure>
                 </section>
-                <footer className="footer">Footer</footer>
+                <footer className="footer">
+                    <ul className="nav">
+                        <li className="nav__item">
+                            <a href="#" className="nav__link">
+                                Find Your Dream Home
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#" className="nav__link">
+                                Request A Proposal
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#" className="nav__link">
+                                Download Home Planner
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#" className="nav__link">
+                                Contact us
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#" className="nav__link">
+                                Submit Your Property
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#" className="nav__link">
+                                Come Work With Us
+                            </a>
+                        </li>
+                    </ul>
+                    <p className="copyright">
+                        &copy; Copyright 2017 by Brian Bycynski.
+                    </p>
+                </footer>
             </div>
         )
     }
