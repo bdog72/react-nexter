@@ -13,8 +13,8 @@
     padding: 80px;
     padding-top: 40px;
     display: grid;
-    grid-template-rows: 1fr min-content 60px 1fr;
-    grid-template-columns: max-content;
+    grid-template-rows: 1fr min-content minmax(60px, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 15px;
     justify-content: center;
 
@@ -51,8 +51,10 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 30px;
         justify-items: center;
+        align-items: center;
         img {
-            height: 25px;
+            max-height: 25px;
+            max-width: 100%;
             filter: brightness(70%);
         }
     }

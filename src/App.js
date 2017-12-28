@@ -28,6 +28,9 @@ import imageLogo1 from './img/logo-bbc.png'
 import imageLogo2 from './img/logo-forbes.png'
 import imageLogo3 from './img/logo-techcrunch.png'
 import imageLogo4 from './img/logo-bi.png'
+import realtorImage1 from './img/realtor-1.jpeg'
+import realtorImage2 from './img/realtor-2.jpeg'
+import realtorImage3 from './img/realtor-3.jpeg'
 
 class App extends Component {
     render() {
@@ -51,7 +54,44 @@ class App extends Component {
                         <img src={imageLogo4} alt="" />
                     </div>
                 </header>
-                <div className="realtors">Top 3 Realtors</div>
+                <div className="realtors">
+                    <h3 className="heading-3">Top 3 Realtors</h3>
+                    <div className="realtors__list">
+                        <img
+                            src={realtorImage1}
+                            alt=""
+                            className="realtors__img"
+                        />
+                        <div className="realtors__details">
+                            <h4 className="heading-4 heading-4--light">
+                                Erik Feinman
+                            </h4>
+                            <p className="realtors__sold">245 Houses Sold</p>
+                        </div>
+                        <img
+                            src={realtorImage2}
+                            alt=""
+                            className="realtors__img"
+                        />
+                        <div className="realtors__details">
+                            <h4 className="heading-4 heading-4--light">
+                                Kim Brown
+                            </h4>
+                            <p className="realtors__sold">200 Houses Sold</p>
+                        </div>
+                        <img
+                            src={realtorImage3}
+                            alt=""
+                            className="realtors__img"
+                        />
+                        <div className="realtors__details">
+                            <h4 className="heading-4 heading-4--light">
+                                Bdog Bozo
+                            </h4>
+                            <p className="realtors__sold">945 Houses Sold</p>
+                        </div>
+                    </div>
+                </div>
 
                 <section className="features">
                     <div className="feature">
