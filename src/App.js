@@ -42,7 +42,7 @@ class App extends Component {
                 <header className="header">
                     <img src={imageLogo} alt="" className="header__logo" />
                     <h3 className="heading-3">Your Own Home</h3>
-                    <h1 className="heading-1">The Ultimate Personal Freedom</h1>
+                    <h1 className="heading-1">The Ultimate Freedom</h1>
                     <button className="btn header__btn">
                         View Our Properties
                     </button>
